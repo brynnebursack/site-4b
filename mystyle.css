@@ -1,0 +1,159 @@
+/* FONTS *****************/
+
+@font-face {
+  font-family: Pixel;
+  src: url(fonts/pixelmix.ttf);
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: Nerko;
+  src: url(fonts/NerkoOne-Regular.ttf);
+}
+/*************************/
+
+h1 {
+  font-family: Nerko;
+  text-shadow: 2px 2px 6px #F0B4BF;
+  font-size: 35px;
+  justify-content: center;
+  display: flex;
+  color: #373C2D;
+}
+
+h2 {
+  font-family: pixelmix;
+  color: #F2BDC7;
+  justify-content: center;
+  display: flex;
+  font-size: 30px;
+  text-shadow: 0 0 3px white;
+}
+
+p {
+  font-family: Montserrat;
+  color: #1C1E16;
+
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(#DDF0B4, #1C1E16);
+  background-attachment: fixed;
+
+}
+
+
+#container {
+  position: relative;
+  top: 20px;
+  width: 650px
+}
+
+#hero-image {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+
+}
+
+#hero-image img {
+  width: 75%;
+  height: 75%;
+
+}
+
+#content-box {
+  background: #F9E3E7;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 15px;
+  padding-top: 10px;
+  margin-bottom: 15px;
+  border-radius: 45px;
+}
+
+ul {
+  position: relative;
+  margin: 30px;
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+
+}
+
+li {
+  margin: 10px;
+}
+
+a {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px;
+  color: #FFF;
+}
+
+a:hover{
+  background: #C1D29E;
+  color: #373C2D;
+}
+
+img {
+  image-resolution: from-image 300dpi;
+  max-width: 100%;
+  height: auto;
+  border-radius: 45px;
+}
+
+.fill {
+  object-fit: fill;
+}
+
+#slider {
+  overflow: hidden;
+  border-radius: 45px;
+}
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 15s slider infinite;
+}
+
+#slider figure img {
+  width: 20%;
+  float: left;
+
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%
+  }
+
+}
